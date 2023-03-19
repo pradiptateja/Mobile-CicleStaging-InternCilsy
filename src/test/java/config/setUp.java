@@ -10,11 +10,11 @@ public class setUp {
     protected static WebDriverWait wait;
 
     protected static String[] device = {"redmi", "emulator", "vivo", "oppo"};
-    protected static String devicesUsed = device[2];
+    protected static String devicesUsed = device[1];
 
     protected static int duration = 60;
     protected static int threadSleep = 5000;
-    protected static int threadSleepOpeningApplication = 15000;
+    protected static int threadSleepOpeningApplication = 5000;
 
 
     //Global Variable

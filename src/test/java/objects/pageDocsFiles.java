@@ -75,7 +75,7 @@ public class pageDocsFiles extends setUp {
         return createdDoc;
     }
 
-    By buttonOptionDoc = By.xpath("//android.view.View[contains(@content-desc, \"test\")]/android.widget.Button");
+    By buttonOptionDoc = By.xpath("//android.view.View[contains(@content-desc,\""+docTitle1+"\")]/android.widget.Button");
     public By getButtonOptionDoc() {
         return buttonOptionDoc;
     }

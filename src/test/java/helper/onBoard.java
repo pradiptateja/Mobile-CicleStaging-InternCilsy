@@ -13,7 +13,7 @@ public class onBoard extends setUp {
 
     public void login() throws InterruptedException {
         //skip welcome page
-       wait.until(ExpectedConditions.presenceOfElementLocated(elementPageWelcome.getButtonSkip()));
+       wait.until(ExpectedConditions.elementToBeClickable(elementPageWelcome.getButtonSkip())).isDisplayed();
         if (driver.findElement(elementPageWelcome.getButtonSkip()).isDisplayed()) {
             driver.findElement(elementPageWelcome.getButtonSkip()).click();
         }

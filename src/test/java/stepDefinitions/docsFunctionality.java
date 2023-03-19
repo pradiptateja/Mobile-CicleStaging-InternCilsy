@@ -30,6 +30,7 @@ public class docsFunctionality extends setUp {
         WebElement inputDocTitle = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageDocsFiles.getInputDocTitle()));
         inputDocTitle.click();
         inputDocTitle.sendKeys(docTitle1);
+        driver.navigate().back();
     }
 
     @When("user input Doc content")
@@ -37,6 +38,7 @@ public class docsFunctionality extends setUp {
         WebElement inputDocContent = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageDocsFiles.getInputDocContent()));
         inputDocContent.click();
         inputDocContent.sendKeys(docContent1);
+        driver.navigate().back();
     }
 
     @When("user add subscriber")

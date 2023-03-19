@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        plugin = "html:target/HTML_ReportAll.html"
+        plugin = "html:target/HTML_ReportAll.html",
+        tags = "@Docs and @Team"
 )
 public class runAll extends setUp {
 
