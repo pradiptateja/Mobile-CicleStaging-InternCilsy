@@ -26,9 +26,10 @@ public class docsFunctionality extends setUp {
     }
 
     @When("user input Doc title")
-    public void user_input_doc_title() {
+    public void user_input_doc_title() throws InterruptedException {
         WebElement inputDocTitle = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageDocsFiles.getInputDocTitle()));
         inputDocTitle.click();
+        Thread.sleep(3000);
         inputDocTitle.sendKeys(docTitle1);
         driver.navigate().back();
     }
